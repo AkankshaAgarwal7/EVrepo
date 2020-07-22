@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form creation</title>
+	<link rel="stylesheet" type="text/css" href="css-r/style.css">
+</head>
+<body style="background-image:url('../bgfiles/images/demo/backgrounds/ecowp.jpg');"><center>
+	<h1 >REGISTRATION FORM</h1>
+	<div class = "register"  style="background-image:url('bgfiles/images/demo/backgrounds/ecowp.jpg');">
+		<form method="POST" id="register" action="register.php">
+            <label><font size="3">FIRST NAME :</font> </label><br>
+            <input type="text" name="first_name" id="name"
+            placeholder="ENTER YOUR FIRST NAME" required><br><br>
+            <label><font size="3">LAST NAME : </font> </label><br>
+            <input type="text" name="last_name" id="name"
+            placeholder="ENTER YOUR LAST NAME" required><br><br>
+            <label><font size="3">MOBILE NUMBER :</font> </label><br>
+            <input type="phone" name="mobile_no" id="num"
+            placeholder="ENTER YOUR MOBILE NUMBER" required><br><br>
+            <label><font size="3">EMAIL ID : </font></label><br>
+            <input type="email" name="email" id="name"
+            placeholder="ENTER YOUR EMAIL" required><br><br>
+            <label><font size="3">PASSWORD : </font></label><br>
+            <input type="PASSWORD" name="password" id="name"
+            placeholder="ENTER YOUR PASSWORD" required><br><br>
+            <label><font size="3"> RE ENTER YOUR PASSWORD: </font></label><br>
+            <input type="PASSWORD" name="pass2" id="name"
+            placeholder="ENTER YOUR PASSWORD" required><br><br>
+            GENDER : <br>
+            <select name="gender" required>
+            	<option selected hidden value=" ">---</option>
+            	<option value="male">MALE</option>
+            	<option value="female">FEMALE</option>
+            	<option value="others">OTHERS</option>
+            </select><br><br>
+            <input type="submit" value="Submit" id="sub">
+		</form>
+	</div>
+</body>
+</html>

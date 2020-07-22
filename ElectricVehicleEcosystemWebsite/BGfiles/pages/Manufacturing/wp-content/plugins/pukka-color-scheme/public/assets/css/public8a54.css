@@ -1,0 +1,218 @@
+.color-switcher {
+	width: 270px;
+	position: fixed;
+	top: 200px;
+	left: -270px;
+	background-color: #ffffff;
+	border: 1px solid #c3c3c3;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    padding: 20px 26px;
+	opacity: 0.9;
+	z-index: 200;
+}
+
+.color-switcher:before {
+    background-color: #5A5758;
+    content: "";
+    display: block;
+    height: 6px;
+    left: 0;
+    position: absolute;
+    top: -7px;
+    width: 101%;
+}
+
+.color-switcher-toggle {
+    background: url("../images/cog.png") no-repeat scroll 50% 50% #5A5758;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: -51px;
+    text-align: center;
+    top: -7px;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.color-selection {
+    overflow: hidden;
+	padding: 10px 0 20px;
+	margin-left: -5px;
+}
+
+.color-selection a {
+    background-color: #CCCCCC;
+    display: block;
+    float: left;
+    height: 34px;
+    margin: 5px 6px;
+    width: 34px;
+	text-align: center;
+}
+
+.color-selection a.selected {
+    border: 2px solid;
+	margin: 3px 4px;
+}
+
+.color-selection a span:before {
+    content: "";
+    height: 100%;
+    right: 17px;
+    position: absolute;
+    top: 0;
+    width: 17px;
+	background-color: #aa0000;
+}
+
+.color-selection a span:after {
+    content: "";
+    height: 100%;
+    left: 17px;
+    position: absolute;
+    top: 0;
+    width: 17px;
+	background-color: #0000aa;
+}
+
+.color-selection a span {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+
+.color-selection a span.theme-default:before {
+	background-color: #84BE3F;
+}
+.color-selection a span.theme-default:after {
+	background-color: #007BB5;
+}
+
+.color-selection a span.theme-light_gray:before {
+	background-color: #cccccc;
+}
+.color-selection a span.theme-light_gray:after {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-left: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.color-selection a span.theme-dark_yellow:before {
+	background-color: #000000;
+}
+.color-selection a span.theme-dark_yellow:after {
+	background-color: #ffce00;
+}
+
+.color-selection a span.theme-light_blue:before {
+	background-color: #007bb5;
+}
+.color-selection a span.theme-light_blue:after {
+	background-color: #3f9eea;
+}
+
+.color-selection a span.theme-black_white:before {
+	background-color: #000000;
+}
+.color-selection a span.theme-black_white:after {
+	background-color: #ffffff;	
+	border: 1px solid #000000;
+	border-left: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.color-selection a span.theme-light_red:before {
+	background-color: #f94b4b;
+}
+.color-selection a span.theme-light_red:after {
+	background-color: #666666;
+}
+
+.color-selection a span.theme-purple_pink:before {
+	background-color: #93005d;
+}
+.color-selection a span.theme-purple_pink:after {
+	background-color: #680347;
+}
+
+.color-selection a span.theme-mix_1:before {
+	background-color: #454445;
+}
+.color-selection a span.theme-mix_1:after {
+	background-color: #009393;
+}
+
+.switcher-title {
+    color: #AFAFAF;
+    font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.switcher-typography-title {
+    color: #AFAFAF;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.color-switcher select {
+    margin-bottom: 15px;
+    /*margin-right: 5px;
+    width: 150px;*/
+}
+
+#change-scheme {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #000000;
+    float: left;
+    margin: 10px 20px 15px 0;
+    padding: 5px 10px;
+}
+
+#reset-scheme {	
+    color: #000000;
+    float: left;
+    margin: 10px 0 15px;
+    padding: 5px 0;
+}
+
+.switcher-note {
+    color: #555555;
+    float: left;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.color-switcher .preview {
+	cursor: pointer;
+	display: none;
+}
+
+
+/* Logo fix */
+.demostyle-light_gray #main-logo,
+.demostyle-black_white #main-logo {
+    background: url("../images/logo_black.png") no-repeat scroll 50% 50% transparent;
+	background-size: auto 100%;
+    text-indent: -9999px;
+	width: 300px;
+	height: 70px;
+}
+
+.demostyle-light_gray #main-logo a img,
+.demostyle-black_white #main-logo a img {
+	display: inline !important;
+}
